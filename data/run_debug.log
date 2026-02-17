@@ -1,0 +1,584 @@
+2026-02-17 23:24:47,796 - main - INFO - Starting Credit Eligibility Tool - Phase 1
+2026-02-17 23:24:47,826 - src.database.db_manager - INFO - Connected to Database
+2026-02-17 23:24:47,826 - src.database.db_manager - INFO - Table 'scoring_logs' checked/created.
+2026-02-17 23:24:47,915 - src.generators.profile_generator - INFO - Generating 10 profiles...
+2026-02-17 23:24:47,921 - src.generators.profile_generator - INFO - Profiles saved to data/profiles_batch_1.csv
+2026-02-17 23:24:47,921 - main - INFO - Starting scraping process...
+2026-02-17 23:24:48,865 - main - INFO - Processing profile dc00732f-64c0-4ca6-8de6-a2fecaaecca8...
+2026-02-17 23:24:48,865 - src.scrapers.zitouna_scraper - INFO - Navigating to https://www.banquezitouna.com/fr/particuliers/simulateur
+2026-02-17 23:24:55,279 - src.scrapers.zitouna_scraper - INFO - Filling form for Zitouna (Financement Véhicule)...
+2026-02-17 23:25:26,378 - src.scrapers.zitouna_scraper - ERROR - Error in fill_form at step: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:25:26,546 - src.scrapers.base_scraper - ERROR - Scraping failed for profile dc00732f-64c0-4ca6-8de6-a2fecaaecca8: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:25:26,638 - main - ERROR - Error processing dc00732f-64c0-4ca6-8de6-a2fecaaecca8: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:25:26,638 - main - INFO - Processing profile e21d9e33-98dc-42a6-88f0-ca1c5fc48111...
+2026-02-17 23:25:26,639 - src.scrapers.zitouna_scraper - INFO - Navigating to https://www.banquezitouna.com/fr/particuliers/simulateur
+2026-02-17 23:25:29,723 - src.scrapers.zitouna_scraper - INFO - Filling form for Zitouna (Financement Véhicule)...
+2026-02-17 23:26:00,840 - src.scrapers.zitouna_scraper - ERROR - Error in fill_form at step: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:26:00,922 - src.scrapers.base_scraper - ERROR - Scraping failed for profile e21d9e33-98dc-42a6-88f0-ca1c5fc48111: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:26:00,989 - main - ERROR - Error processing e21d9e33-98dc-42a6-88f0-ca1c5fc48111: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:26:00,989 - main - INFO - Processing profile 92730508-24f2-4f3e-86db-9557b749aa26...
+2026-02-17 23:26:00,989 - src.scrapers.zitouna_scraper - INFO - Navigating to https://www.banquezitouna.com/fr/particuliers/simulateur
+2026-02-17 23:26:05,436 - src.scrapers.zitouna_scraper - INFO - Filling form for Zitouna (Financement Véhicule)...
+2026-02-17 23:26:36,548 - src.scrapers.zitouna_scraper - ERROR - Error in fill_form at step: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:26:36,620 - src.scrapers.base_scraper - ERROR - Scraping failed for profile 92730508-24f2-4f3e-86db-9557b749aa26: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:26:36,681 - main - ERROR - Error processing 92730508-24f2-4f3e-86db-9557b749aa26: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:26:36,681 - main - INFO - Processing profile 1d36b418-e37e-4a4b-9829-56d1e4460e29...
+2026-02-17 23:26:36,681 - src.scrapers.zitouna_scraper - INFO - Navigating to https://www.banquezitouna.com/fr/particuliers/simulateur
+2026-02-17 23:26:40,112 - src.scrapers.zitouna_scraper - INFO - Filling form for Zitouna (Financement Véhicule)...
+2026-02-17 23:27:11,179 - src.scrapers.zitouna_scraper - ERROR - Error in fill_form at step: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:27:11,273 - src.scrapers.base_scraper - ERROR - Scraping failed for profile 1d36b418-e37e-4a4b-9829-56d1e4460e29: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:27:11,354 - main - ERROR - Error processing 1d36b418-e37e-4a4b-9829-56d1e4460e29: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:27:11,354 - main - INFO - Processing profile 312d8761-4248-4fe3-b785-dec0dbdcae06...
+2026-02-17 23:27:11,354 - src.scrapers.zitouna_scraper - INFO - Navigating to https://www.banquezitouna.com/fr/particuliers/simulateur
+2026-02-17 23:27:15,850 - src.scrapers.zitouna_scraper - INFO - Filling form for Zitouna (Financement Véhicule)...
+2026-02-17 23:27:46,929 - src.scrapers.zitouna_scraper - ERROR - Error in fill_form at step: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:27:47,007 - src.scrapers.base_scraper - ERROR - Scraping failed for profile 312d8761-4248-4fe3-b785-dec0dbdcae06: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:27:47,083 - main - ERROR - Error processing 312d8761-4248-4fe3-b785-dec0dbdcae06: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:27:47,083 - main - INFO - Processing profile 0fd6f0d6-f7a9-4e4c-8f05-e0408bf51a10...
+2026-02-17 23:27:47,084 - src.scrapers.zitouna_scraper - INFO - Navigating to https://www.banquezitouna.com/fr/particuliers/simulateur
+2026-02-17 23:27:51,030 - src.scrapers.zitouna_scraper - INFO - Filling form for Zitouna (Financement Véhicule)...
+2026-02-17 23:28:22,088 - src.scrapers.zitouna_scraper - ERROR - Error in fill_form at step: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:28:22,171 - src.scrapers.base_scraper - ERROR - Scraping failed for profile 0fd6f0d6-f7a9-4e4c-8f05-e0408bf51a10: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:28:22,254 - main - ERROR - Error processing 0fd6f0d6-f7a9-4e4c-8f05-e0408bf51a10: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:28:22,254 - main - INFO - Processing profile 6fb47ba4-cc32-437d-970c-08b07e1bfbee...
+2026-02-17 23:28:22,254 - src.scrapers.zitouna_scraper - INFO - Navigating to https://www.banquezitouna.com/fr/particuliers/simulateur
+2026-02-17 23:28:25,069 - src.scrapers.zitouna_scraper - INFO - Filling form for Zitouna (Financement Véhicule)...
+2026-02-17 23:28:56,137 - src.scrapers.zitouna_scraper - ERROR - Error in fill_form at step: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:28:56,229 - src.scrapers.base_scraper - ERROR - Scraping failed for profile 6fb47ba4-cc32-437d-970c-08b07e1bfbee: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:28:56,303 - main - ERROR - Error processing 6fb47ba4-cc32-437d-970c-08b07e1bfbee: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:28:56,303 - main - INFO - Processing profile efa3b158-12ba-495d-9c17-33ffab9fa32f...
+2026-02-17 23:28:56,303 - src.scrapers.zitouna_scraper - INFO - Navigating to https://www.banquezitouna.com/fr/particuliers/simulateur
+2026-02-17 23:29:01,828 - src.scrapers.zitouna_scraper - INFO - Filling form for Zitouna (Financement Véhicule)...
+2026-02-17 23:29:32,917 - src.scrapers.zitouna_scraper - ERROR - Error in fill_form at step: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:29:32,992 - src.scrapers.base_scraper - ERROR - Scraping failed for profile efa3b158-12ba-495d-9c17-33ffab9fa32f: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:29:33,063 - main - ERROR - Error processing efa3b158-12ba-495d-9c17-33ffab9fa32f: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:29:33,063 - main - INFO - Processing profile bb18c159-0e5a-4aab-b074-b82340d916b8...
+2026-02-17 23:29:33,063 - src.scrapers.zitouna_scraper - INFO - Navigating to https://www.banquezitouna.com/fr/particuliers/simulateur
+2026-02-17 23:29:37,969 - src.scrapers.zitouna_scraper - INFO - Filling form for Zitouna (Financement Véhicule)...
+2026-02-17 23:30:09,030 - src.scrapers.zitouna_scraper - ERROR - Error in fill_form at step: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:30:09,123 - src.scrapers.base_scraper - ERROR - Scraping failed for profile bb18c159-0e5a-4aab-b074-b82340d916b8: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:30:09,230 - main - ERROR - Error processing bb18c159-0e5a-4aab-b074-b82340d916b8: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:30:09,230 - main - INFO - Processing profile a443ffb3-2228-44e8-9eb3-1f6db5182224...
+2026-02-17 23:30:09,230 - src.scrapers.zitouna_scraper - INFO - Navigating to https://www.banquezitouna.com/fr/particuliers/simulateur
+2026-02-17 23:30:13,159 - src.scrapers.zitouna_scraper - INFO - Filling form for Zitouna (Financement Véhicule)...
+2026-02-17 23:30:44,234 - src.scrapers.zitouna_scraper - ERROR - Error in fill_form at step: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:30:44,319 - src.scrapers.base_scraper - ERROR - Scraping failed for profile a443ffb3-2228-44e8-9eb3-1f6db5182224: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:30:44,398 - main - ERROR - Error processing a443ffb3-2228-44e8-9eb3-1f6db5182224: Page.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("select#edit-cible")
+    - locator resolved to <select disabled name="cible" id="edit-cible" data-drupal-selector="edit-cible" class="col-sm-7 form-control form-select">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - element is not visible
+    - retrying select option action
+      - waiting 100ms
+    59 × waiting for element to be visible and enabled
+       - element is not visible
+     - retrying select option action
+       - waiting 500ms
+
+2026-02-17 23:30:45,478 - src.database.db_manager - INFO - Database connection closed.
+2026-02-17 23:30:45,569 - main - INFO - ========================================
+2026-02-17 23:30:45,569 - main - INFO - Execution Completed.
+2026-02-17 23:30:45,569 - main - INFO - Total Profiles Generated: 10
+2026-02-17 23:30:45,570 - main - INFO - Processed: 10
+2026-02-17 23:30:45,570 - main - INFO - Successful Logged: 0
+2026-02-17 23:30:45,570 - main - INFO - Errors/Skipped: 10
+2026-02-17 23:30:45,570 - main - INFO - ========================================

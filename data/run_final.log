@@ -1,0 +1,44 @@
+2026-02-17 23:31:53,806 - main - INFO - Starting Credit Eligibility Tool - Phase 1
+2026-02-17 23:31:53,915 - src.database.db_manager - INFO - Connected to Database
+2026-02-17 23:31:53,922 - src.database.db_manager - INFO - Table 'scoring_logs' checked/created.
+2026-02-17 23:31:54,032 - src.generators.profile_generator - INFO - Generating 2 profiles...
+2026-02-17 23:31:54,062 - src.generators.profile_generator - INFO - Profiles saved to data/profiles_batch_1.csv
+2026-02-17 23:31:54,062 - main - INFO - Starting scraping process...
+2026-02-17 23:31:55,898 - main - INFO - Processing profile c7e5db5d-d179-4fbf-a91b-dfd67a84a67b...
+2026-02-17 23:31:55,900 - src.scrapers.zitouna_scraper - INFO - Navigating to https://www.banquezitouna.com/fr/particuliers/simulateur
+2026-02-17 23:32:00,840 - src.scrapers.zitouna_scraper - INFO - Filling form for Zitouna (Financement Véhicule)...
+2026-02-17 23:32:04,018 - src.scrapers.zitouna_scraper - INFO - Form filled successfully.
+2026-02-17 23:32:04,018 - src.scrapers.zitouna_scraper - INFO - Submitting form via JS Submit...
+2026-02-17 23:32:14,028 - src.scrapers.zitouna_scraper - WARNING - JS Submit or wait failed: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(".simulator-result, #simulatorResult1, #simulatorResult2") to be visible
+    - waiting for" https://www.banquezitouna.com/fr/recherche?search_api_fulltext=" navigation to finish...
+    - navigated to "https://www.banquezitouna.com/fr/recherche?search_api_fulltext="
+
+2026-02-17 23:32:16,035 - src.scrapers.zitouna_scraper - INFO - Extracting results...
+2026-02-17 23:32:16,045 - src.scrapers.zitouna_scraper - WARNING - Scraping finished but no result found. Falling back to MOCK DATA.
+2026-02-17 23:32:16,045 - src.scrapers.base_scraper - ERROR - Scraping failed for profile c7e5db5d-d179-4fbf-a91b-dfd67a84a67b: name 'profile' is not defined
+2026-02-17 23:32:16,375 - main - ERROR - Error processing c7e5db5d-d179-4fbf-a91b-dfd67a84a67b: name 'profile' is not defined
+2026-02-17 23:32:16,375 - main - INFO - Processing profile 5f2a5182-d26c-4c35-819b-6bff4b110468...
+2026-02-17 23:32:16,375 - src.scrapers.zitouna_scraper - INFO - Navigating to https://www.banquezitouna.com/fr/particuliers/simulateur
+2026-02-17 23:32:21,634 - src.scrapers.zitouna_scraper - INFO - Filling form for Zitouna (Financement Véhicule)...
+2026-02-17 23:32:24,767 - src.scrapers.zitouna_scraper - INFO - Form filled successfully.
+2026-02-17 23:32:24,767 - src.scrapers.zitouna_scraper - INFO - Submitting form via JS Submit...
+2026-02-17 23:32:34,777 - src.scrapers.zitouna_scraper - WARNING - JS Submit or wait failed: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(".simulator-result, #simulatorResult1, #simulatorResult2") to be visible
+    - waiting for" https://www.banquezitouna.com/fr/recherche?search_api_fulltext=" navigation to finish...
+    - navigated to "https://www.banquezitouna.com/fr/recherche?search_api_fulltext="
+
+2026-02-17 23:32:36,783 - src.scrapers.zitouna_scraper - INFO - Extracting results...
+2026-02-17 23:32:36,863 - src.scrapers.zitouna_scraper - WARNING - Scraping finished but no result found. Falling back to MOCK DATA.
+2026-02-17 23:32:36,864 - src.scrapers.base_scraper - ERROR - Scraping failed for profile 5f2a5182-d26c-4c35-819b-6bff4b110468: name 'profile' is not defined
+2026-02-17 23:32:37,033 - main - ERROR - Error processing 5f2a5182-d26c-4c35-819b-6bff4b110468: name 'profile' is not defined
+2026-02-17 23:32:37,949 - src.database.db_manager - INFO - Database connection closed.
+2026-02-17 23:32:37,973 - main - INFO - ========================================
+2026-02-17 23:32:37,973 - main - INFO - Execution Completed.
+2026-02-17 23:32:37,973 - main - INFO - Total Profiles Generated: 2
+2026-02-17 23:32:37,973 - main - INFO - Processed: 2
+2026-02-17 23:32:37,973 - main - INFO - Successful Logged: 0
+2026-02-17 23:32:37,975 - main - INFO - Errors/Skipped: 2
+2026-02-17 23:32:37,975 - main - INFO - ========================================

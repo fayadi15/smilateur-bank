@@ -1,0 +1,40 @@
+2026-02-17 23:33:06,762 - main - INFO - Starting Credit Eligibility Tool - Phase 1
+2026-02-17 23:33:06,798 - src.database.db_manager - INFO - Connected to Database
+2026-02-17 23:33:06,799 - src.database.db_manager - INFO - Table 'scoring_logs' checked/created.
+2026-02-17 23:33:06,888 - src.generators.profile_generator - INFO - Generating 2 profiles...
+2026-02-17 23:33:06,893 - src.generators.profile_generator - INFO - Profiles saved to data/profiles_batch_1.csv
+2026-02-17 23:33:06,893 - main - INFO - Starting scraping process...
+2026-02-17 23:33:07,951 - main - INFO - Processing profile cdbe2db5-8671-4896-aad0-40f5d2c3a0ea...
+2026-02-17 23:33:07,952 - src.scrapers.zitouna_scraper - INFO - Navigating to https://www.banquezitouna.com/fr/particuliers/simulateur
+2026-02-17 23:33:13,402 - src.scrapers.zitouna_scraper - INFO - Filling form for Zitouna (Financement Véhicule)...
+2026-02-17 23:33:16,573 - src.scrapers.zitouna_scraper - INFO - Form filled successfully.
+2026-02-17 23:33:16,573 - src.scrapers.zitouna_scraper - INFO - Submitting form via JS Submit...
+2026-02-17 23:33:26,585 - src.scrapers.zitouna_scraper - WARNING - JS Submit or wait failed: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(".simulator-result, #simulatorResult1, #simulatorResult2") to be visible
+    - waiting for" https://www.banquezitouna.com/fr/recherche?search_api_fulltext=" navigation to finish...
+    - navigated to "https://www.banquezitouna.com/fr/recherche?search_api_fulltext="
+
+2026-02-17 23:33:28,588 - src.scrapers.zitouna_scraper - INFO - Extracting results...
+2026-02-17 23:33:28,601 - src.scrapers.zitouna_scraper - WARNING - Scraping finished but no result found. Falling back to MOCK DATA.
+2026-02-17 23:33:28,627 - main - INFO - Processing profile da99bdd4-afa8-4a0f-8df1-d91963edaa7c...
+2026-02-17 23:33:28,627 - src.scrapers.zitouna_scraper - INFO - Navigating to https://www.banquezitouna.com/fr/particuliers/simulateur
+2026-02-17 23:33:32,689 - src.scrapers.zitouna_scraper - INFO - Filling form for Zitouna (Financement Véhicule)...
+2026-02-17 23:33:35,822 - src.scrapers.zitouna_scraper - INFO - Form filled successfully.
+2026-02-17 23:33:35,822 - src.scrapers.zitouna_scraper - INFO - Submitting form via JS Submit...
+2026-02-17 23:33:45,838 - src.scrapers.zitouna_scraper - WARNING - JS Submit or wait failed: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(".simulator-result, #simulatorResult1, #simulatorResult2") to be visible
+    - waiting for" https://www.banquezitouna.com/fr/recherche?search_api_fulltext=" navigation to finish...
+    - navigated to "https://www.banquezitouna.com/fr/recherche?search_api_fulltext="
+
+2026-02-17 23:33:47,845 - src.scrapers.zitouna_scraper - INFO - Extracting results...
+2026-02-17 23:33:47,854 - src.scrapers.zitouna_scraper - WARNING - Scraping finished but no result found. Falling back to MOCK DATA.
+2026-02-17 23:33:48,790 - src.database.db_manager - INFO - Database connection closed.
+2026-02-17 23:33:48,811 - main - INFO - ========================================
+2026-02-17 23:33:48,811 - main - INFO - Execution Completed.
+2026-02-17 23:33:48,811 - main - INFO - Total Profiles Generated: 2
+2026-02-17 23:33:48,811 - main - INFO - Processed: 2
+2026-02-17 23:33:48,811 - main - INFO - Successful Logged: 2
+2026-02-17 23:33:48,811 - main - INFO - Errors/Skipped: 0
+2026-02-17 23:33:48,811 - main - INFO - ========================================
