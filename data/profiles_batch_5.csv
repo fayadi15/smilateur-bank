@@ -1,0 +1,6 @@
+id,age,salaire_net,statut_pro,anciennete,situation_famille,nombre_enfants,autres_credits,montant_pret_demande,duree_mois,loan_type
+171b9236-7515-4945-aee1-03b710255600,37,5677,Profession Libérale,2,Divorcé,0,0,6000,60,CONSO
+0fac0d1a-27eb-4f94-a43d-3fcd149e7de7,55,1570,Secteur Privé,17,Célibataire,0,524,30987,60,AUTO
+72fb4b80-5ab7-4329-8325-121e6132f2b7,40,1372,Fonctionnaire,19,Célibataire,1,0,3000,24,CONSO
+475dbf75-baa8-4e06-8f35-454a8f8071c1,54,1564,Fonctionnaire,7,Veuf,0,0,29000,48,AUTO
+03eee5d7-f010-41ba-b894-815f7d29ef17,52,2732,Fonctionnaire,17,Célibataire,1,189,140867,180,IMMO

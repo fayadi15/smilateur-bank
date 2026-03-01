@@ -1,10 +1,13 @@
 import os
 import sys
 from playwright.sync_api import sync_playwright
+from src.scrapers.bh_scraper import BhScraper
+from src.scrapers.biat_scraper import BIATScraper
 from src.generators.profile_generator import ProfileGenerator
 from src.database.db_manager import DatabaseManager
 from src.scrapers.zitouna_scraper import ZitounaScraper 
 from src.scrapers.attijari_scraper import AttijariScraper
+from src.scrapers.std_scraper import STDScraper
 from src.utils.logger import setup_logger
 
 logger = setup_logger("main")
@@ -13,7 +16,7 @@ import argparse
 
 def main():
     parser = argparse.ArgumentParser(description="Credit Eligibility Tool - Phase 1")
-    parser.add_argument("--bank", type=str, help="Specify bank to scrape (Zitouna or Attijari). Default: all", default="all")
+    parser.add_argument("--bank", type=str, help="Specify bank to scrape (Zitouna, Attijari, BIAT, STD, BH). Default: all")
     parser.add_argument("--count", type=int, help="Number of profiles to generate/process", default=50)
     args = parser.parse_args()
 
@@ -38,7 +41,10 @@ def main():
     # 3. Scrapers Setup
     all_scrapers = [
         ZitounaScraper(headless=True),
-        AttijariScraper(headless=True)
+        AttijariScraper(headless=True),
+        BIATScraper(headless=True),
+        STDScraper(headless=True),
+        BhScraper(headless=True)
     ]
     
     # Filter based on args
@@ -47,6 +53,12 @@ def main():
         scrapers = [s for s in all_scrapers if isinstance(s, ZitounaScraper)]
     elif args.bank.lower() == "attijari":
         scrapers = [s for s in all_scrapers if isinstance(s, AttijariScraper)]
+    elif args.bank.lower() == "biat":
+        scrapers = [s for s in all_scrapers if isinstance(s, BIATScraper)]
+    elif args.bank.lower() == "std":
+        scrapers = [s for s in all_scrapers if isinstance(s, STDScraper)]
+    elif args.bank.lower() == "bh":
+        scrapers = [s for s in all_scrapers if isinstance(s, BhScraper)]
 
     # 4. Run Scraping Loop
     logger.info(f"Starting scaling simulation for {profile_count} profiles across {len(scrapers)} banks...")

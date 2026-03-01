@@ -1,0 +1,21 @@
+id,age,salaire_net,statut_pro,anciennete,situation_famille,nombre_enfants,autres_credits,montant_pret_demande,duree_mois,loan_type
+e31e0f88-dd28-4115-abcc-fadd8d7baf23,64,2322,Fonctionnaire,9,Célibataire,0,0,247000,180,IMMO
+62ae8485-435a-450d-a6dd-cf5d0b906d56,32,7453,Profession Libérale,20,Marié,0,0,62000,24,AUTO
+7dbb37ec-cda1-4f6d-9812-c4c059763fbf,46,1336,Secteur Privé,17,Divorcé,0,0,5000,24,VOYAGE
+f8962a13-26d0-4d77-a60c-da2626c6a278,37,2246,Fonctionnaire,16,Divorcé,0,0,204000,180,IMMO
+f325b50f-f901-46c8-86ce-06728aed0190,51,2275,Fonctionnaire,10,Divorcé,0,0,21000,36,AUTO
+69737908-5ebe-4bc9-b1fa-9f0ad3f39302,23,2914,Secteur Privé,13,Veuf,0,0,170202,180,IMMO
+622d4323-54cb-463f-b8b4-fd02fa14fb7e,27,2213,Fonctionnaire,18,Veuf,0,0,96341,120,IMMO
+1d221150-d3e3-49b2-ab71-5bc0e1c0c7bb,34,6418,Profession Libérale,11,Marié,0,466,56000,24,AUTO
+cdf38753-3f45-4076-8553-98d85b3ecd35,31,500,Secteur Privé,2,Célibataire,1,257,10161,24,AUTO
+1b580c86-2ba0-4e19-8979-d7278c771203,33,2130,Secteur Privé,3,Marié,0,0,346000,300,IMMO
+061f4630-310b-4c57-9f16-55eaca594cc6,61,2563,Secteur Privé,3,Célibataire,2,144,156149,180,IMMO
+77e2a164-2446-4488-9166-45ae34f74f4c,60,1379,Fonctionnaire,12,Divorcé,2,0,6000,24,VOYAGE
+0f8efa3e-1978-47b9-b2cb-38eb7b6a1a57,44,1993,Commerçant,8,Divorcé,3,0,88371,120,IMMO
+4063ae05-d6a6-433b-b0f3-9802072dcd64,59,3346,Secteur Privé,2,Marié,4,0,9000,12,CONSO
+2cacc6d4-cfd3-4ce2-b4a5-ab1548be1177,51,516,Secteur Privé,10,Marié,2,0,20235,120,IMMO
+8359d741-7b6d-4a56-8ca1-36f8270b7a21,57,1398,Fonctionnaire,17,Divorcé,2,0,32868,36,AUTO
+7a873206-e2cc-4db5-b379-56358a3041c0,28,2958,Secteur Privé,3,Divorcé,0,0,210682,180,IMMO
+947cb0fb-ac6a-44f0-a180-71a78750b3ee,49,1965,Fonctionnaire,4,Célibataire,0,0,272000,240,IMMO
+851f6d33-607e-4cda-a851-ede50c35e278,28,2151,Secteur Privé,10,Divorcé,1,328,36000,36,AUTO
+201fb88f-f31a-4f4b-93a3-b96b7f974ca4,52,1974,Fonctionnaire,18,Célibataire,2,151,233000,240,IMMO

@@ -1,0 +1,11 @@
+id,age,salaire_net,statut_pro,anciennete,situation_famille,nombre_enfants,autres_credits,montant_pret_demande,duree_mois,loan_type
+a40aaa89-1741-4fff-87d9-2dc927fede03,63,980,Fonctionnaire,3,Veuf,0,0,67303,240,IMMO
+242e4e51-6f5d-40c1-a227-0d700991b0cc,33,1195,Fonctionnaire,6,Célibataire,3,110,6000,48,CONSO
+224549da-0092-4de8-85a8-dbf49cadbfba,32,7707,Profession Libérale,10,Divorcé,1,286,75000,84,AUTO
+5b327db5-9294-4fea-bffd-6770a7ec68f8,43,1439,Secteur Privé,8,Divorcé,1,0,53200,120,IMMO
+18a479de-c553-4c13-ab16-9a56b6d12dcc,63,1017,Secteur Privé,19,Veuf,0,0,3000,18,VOYAGE
+78eae57b-75da-402c-9305-7c4935cb90e7,51,3901,Secteur Privé,9,Célibataire,1,0,26000,84,AUTO
+4741db46-61c6-4966-97cb-7619854a51ac,60,3666,Secteur Privé,3,Veuf,1,0,15000,12,CONSO
+0bb6d946-7373-48e6-a11b-27e4fcc20ce5,55,819,Secteur Privé,19,Marié,0,0,98000,240,IMMO
+4922a91a-e4c5-4187-b5f5-0b6e219975f8,43,3919,Secteur Privé,17,Veuf,2,0,244000,300,IMMO
+8a09e43d-7b75-4ca1-914a-2b66a991bda4,47,1164,Fonctionnaire,11,Veuf,0,0,11000,24,CONSO

@@ -1,74 +1,96 @@
 import time
-import random
-from typing import Dict, Any
+from typing import Dict, Any, Optional
+
 from .base_scraper import BaseBankScraper
+from .biat_inspects import BIAT_INSPECTS
+from .biat_inspects import common
 from ..utils.logger import setup_logger
 
 logger = setup_logger(__name__)
 
+
 class BIATScraper(BaseBankScraper):
     """
-    Scraper for BIAT Credit Simulator.
-    URL: Placeholder (requires actual URL)
+    Scraper minimal: la logique spécifique est dans src/scrapers/biat_inspects/inspect_*.py
     """
-    
+
     def __init__(self, headless: bool = True):
         super().__init__(headless)
-        # Placeholder URL - Replace with actual simulator URL
-        self.base_url = "https://www.biat.tn/biat/fr/particuliers/credits/simulateur-de-credit" 
+        self.inspect = BIAT_INSPECTS["CREDIMEDIA"]
+        self.base_url = self.inspect.URL
+        self.current_profile: Optional[Dict[str, Any]] = None
+
+    def _pick_inspect(self, profile: Dict[str, Any]):
+        # override manuel possible
+        if profile.get("biat_simulator") in BIAT_INSPECTS:
+            return BIAT_INSPECTS[profile["biat_simulator"]]
+
+        loan_type = (profile.get("loan_type") or "").upper()
+        if loan_type == "AUTO":
+            return BIAT_INSPECTS["CREDIAUTO"]
+        if loan_type == "IMMO":
+            return BIAT_INSPECTS["BIATIMMO"]
+        # défaut conso
+        return BIAT_INSPECTS["CREDIMEDIA"]
+
+    def run(self, playwright, profile: Dict[str, Any]) -> Dict[str, Any]:
+        self.inspect = self._pick_inspect(profile)
+        self.base_url = self.inspect.URL
+        profile["biat_simulator"] = self.inspect.KEY
+        return super().run(playwright, profile)
 
     def navigate(self):
-        logger.info(f"Navigating to {self.base_url}")
-        self.page.goto(self.base_url, timeout=60000)
-        # Random sleep to mimic human behavior
-        time.sleep(random.uniform(2, 5))
+        logger.info(f"Navigating BIAT {self.inspect.KEY}: {self.base_url}")
+        self.page.goto(self.base_url, wait_until="networkidle", timeout=60000)
+        time.sleep(0.6)
 
     def fill_form(self, profile: Dict[str, Any]):
-        logger.info("Filling form...")
-        
-        # MAPPING (HYPOTHETICAL SELECTORS)
-        # We need to map our profile keys to the bank's specific inputs
-        
-        # Example: Select credit type (Consommation vs Habitat)
-        # Assuming we are doing 'Consommation' for now based on amount or hardcoded
-        # self.page.select_option("select#TypeCredit", "CONSOMMATION")
-        
-        # Amount
-        # self.page.fill("input#Montant", str(profile['montant_pret_demande']))
-        
-        # Duration
-        # self.page.fill("input#Duree", str(profile['duree_mois']))
-        
-        # Salary / Revenue
-        # self.page.fill("input#Salaire", str(profile['salaire_net']))
-        
-        # Age (some simulators ask for birth date)
-        # birth_year = 2024 - profile['age']
-        # self.page.fill("input#Age", str(profile['age'])) 
-        
-        # Mimic typing speed or delays
-        time.sleep(random.uniform(1, 3))
-        
-        logger.warning("Selectors in BIATScraper are placeholders. Code will fail on real site without updates.")
+        self.current_profile = profile
+        logger.info(f"Filling BIAT {self.inspect.KEY} ...")
+        self.inspect.fill(self.page, profile)
 
     def submit_and_wait(self):
-        logger.info("Submitting form...")
-        # self.page.click("button#Simuler")
-        
-        # Wait for result container
-        # self.page.wait_for_selector("div#Resultats", timeout=10000)
-        time.sleep(random.uniform(2, 4))
+        logger.info(f"Submitting BIAT {self.inspect.KEY} ...")
+        self.inspect.submit_and_wait(self.page)
 
     def extract_result(self) -> Dict[str, Any]:
-        logger.info("Extracting results...")
-        
-        # Placeholder logic
-        # has_result = self.page.is_visible("div.success-message")
-        
-        # Default placeholder return
-        return {
+        logger.info(f"Extracting BIAT {self.inspect.KEY} result ...")
+
+        result = {
             "bank_name": "BIAT",
-            "result_status": "ELIGIBLE_MOCK", # Placeholder
-            "monthly_payment": 0.0,
-            "interest_rate": 0.0
+            "result_status": "ERROR",
+            "monthly_payment": None,
+            "interest_rate": 0.0,
+            "details": "",
         }
+
+        # extra details (ex: conditions)
+        try:
+            det = self.inspect.extra_details(self.page)
+            if det:
+                result["details"] = det
+        except Exception:
+            pass
+
+        # monthly
+        try:
+            self.page.wait_for_selector("#remb_mensuel", state="attached", timeout=20000)
+            txt = (self.page.text_content("#remb_mensuel") or "").strip()
+            monthly = common.parse_monthly_payment(txt)
+            if monthly is None:
+                result["details"] = (result["details"] + " | cannot parse monthly").strip(" |")
+                return result
+
+            result["monthly_payment"] = monthly
+            result["result_status"] = "ELIGIBLE"
+
+            # interest rate (implicite)
+            if self.current_profile:
+                P, n = self.inspect.principal_and_months(self.current_profile)
+                if P and n:
+                    result["interest_rate"] = common.estimate_annual_rate_percent(float(P), int(n), float(monthly))
+
+        except Exception as e:
+            result["details"] = (result["details"] + f" | {e}").strip(" |")
+
+        return result

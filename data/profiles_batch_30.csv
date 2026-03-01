@@ -1,0 +1,31 @@
+id,age,salaire_net,statut_pro,anciennete,situation_famille,nombre_enfants,autres_credits,montant_pret_demande,duree_mois,loan_type
+31191583-94d8-4290-91e4-bfd21d16fbf7,44,2082,Profession Libérale,4,Veuf,4,0,144000,120,IMMO
+4c498aec-6562-41a8-99e0-8bc2daaceb66,25,2671,Secteur Privé,4,Marié,0,0,3000,12,VOYAGE
+85ae2cb4-670d-4ef1-8813-60f0aa09ce6a,35,1904,Secteur Privé,17,Célibataire,0,0,195000,300,IMMO
+a4699554-051a-4de3-bd2e-bd4f8d2ffb2b,25,1162,Fonctionnaire,16,Marié,2,0,34000,48,AUTO
+18340a40-e326-4417-a267-6e378f150e45,23,1838,Fonctionnaire,18,Divorcé,3,0,14000,36,CONSO
+6284b8cc-532a-43b9-9fe9-a7ead61f6635,41,2548,Secteur Privé,0,Marié,4,0,66000,84,AUTO
+8cd54665-0bc6-4a1c-80ba-d833763ae87a,59,4770,Profession Libérale,13,Divorcé,2,155,179000,120,IMMO
+5424ee1d-963d-4587-ae13-68e4b05af4af,47,4910,Commerçant,5,Marié,2,0,35000,60,AUTO
+3ab840d3-5c5e-44e1-b1ce-6f04c411b77b,22,3687,Secteur Privé,1,Marié,1,0,153978,120,IMMO
+288d8005-3631-433e-8ec1-92b4261fe1a9,48,1329,Fonctionnaire,18,Célibataire,0,0,42000,48,AUTO
+c1fdb1df-b8b1-43f7-8b93-528c545bc40b,28,2255,Secteur Privé,10,Marié,0,266,4000,24,VOYAGE
+c13fccc0-96d5-4daf-8e48-97e269ae2417,48,3243,Secteur Privé,1,Célibataire,2,0,40000,72,AUTO
+9c16e3c6-4f5f-4371-a381-1bce5eba7ede,32,569,Secteur Privé,1,Marié,0,0,5000,60,CONSO
+2aba1cfc-3d5d-4d55-8e2e-4c955067371b,46,3482,Secteur Privé,18,Célibataire,0,0,88000,240,IMMO
+8f11a5ed-e4b9-4ae2-a603-85df0cd22d61,40,531,Secteur Privé,1,Marié,2,672,11362,36,AUTO
+18923e04-ff4c-46c3-985c-791c283ece5f,50,829,Fonctionnaire,2,Célibataire,0,0,14271,48,AUTO
+414255bf-03da-4d29-bbb6-2ea360be7177,31,3339,Fonctionnaire,7,Divorcé,2,759,9000,12,CONSO
+9a0a92b0-8cda-406d-882f-727a3db4d77c,51,562,Secteur Privé,8,Marié,3,0,11826,60,AUTO
+df90e9f0-a238-4b4e-a433-697c91dcb411,54,3689,Secteur Privé,8,Veuf,0,0,230000,120,IMMO
+ff19768e-7330-45eb-89fa-6a481748af92,27,1321,Fonctionnaire,17,Veuf,3,0,5000,24,VOYAGE
+38ba13b5-7f7f-435d-9c79-b7d3af920467,28,1479,Fonctionnaire,1,Divorcé,2,459,27985,48,AUTO
+4d1abab1-51c9-4f63-8eb3-8591e6aca632,47,2320,Secteur Privé,5,Divorcé,1,257,113000,120,IMMO
+fdf81228-fb2f-4c2e-9232-8195accca250,46,945,Secteur Privé,16,Divorcé,3,0,60791,180,IMMO
+f5f85d76-259c-4ab3-861d-ea3e3ca111f5,56,2270,Secteur Privé,3,Divorcé,4,0,28000,24,AUTO
+aa9e1de9-5188-4546-8a42-bd61ac46ac88,28,7296,Profession Libérale,13,Divorcé,1,0,153000,180,IMMO
+116508fb-807d-4103-978a-ac4a73928259,26,869,Retraité,4,Marié,3,473,85860,300,IMMO
+8dcf85ce-f826-4b80-a2fc-fe5b45deedd9,63,1766,Fonctionnaire,6,Marié,2,0,15000,36,CONSO
+ba77ccc5-1a79-4787-8508-785a012b2c64,52,2647,Fonctionnaire,12,Marié,2,0,5000,48,CONSO
+556e689e-032f-475c-b95f-b4090a8d7f07,22,3852,Secteur Privé,1,Célibataire,1,0,10000,24,VOYAGE
+21b488c9-a339-417c-8595-e4e7f7d916ed,51,3434,Fonctionnaire,4,Marié,0,0,75000,72,AUTO
