@@ -1,4 +1,4 @@
 id,age,salaire_net,statut_pro,anciennete,situation_famille,nombre_enfants,autres_credits,montant_pret_demande,duree_mois,loan_type
-31173e1d-fe93-46aa-a08a-5a5752b70f74,37,1142,Fonctionnaire,16,Veuf,0,0,9000,18,VOYAGE
-8a6737e9-d124-4d8e-a942-76649eecbf57,47,2577,Fonctionnaire,12,Célibataire,0,0,43000,72,AUTO
-f32c037b-e6eb-4750-9889-ff9713dad594,54,3393,Secteur Privé,16,Marié,4,0,21000,60,AUTO
+b72ae212-81d4-4c7e-b5d7-64efecb944e0,52,1507,Fonctionnaire,2,Marié,2,0,39000,36,AUTO
+20b0918e-edee-4095-925f-7d3d04c7b4e2,58,1221,Fonctionnaire,20,Divorcé,0,0,130000,300,IMMO
+61e69b6b-c80f-4c38-ab07-81227f056864,46,4388,Profession Libérale,14,Marié,0,0,171000,300,IMMO

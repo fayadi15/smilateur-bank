@@ -1,6 +1,9 @@
 import os
 import sys
 from playwright.sync_api import sync_playwright
+from src.scrapers.albaraka_scraper import AlBarakaScraper
+from src.scrapers.amen_scraper import AmenScraper
+from src.scrapers.bte_scraper import BTEScraper
 from src.scrapers.bh_scraper import BhScraper
 from src.scrapers.biat_scraper import BIATScraper
 from src.generators.profile_generator import ProfileGenerator
@@ -44,7 +47,10 @@ def main():
         AttijariScraper(headless=True),
         BIATScraper(headless=True),
         STDScraper(headless=True),
-        BhScraper(headless=True)
+        BhScraper(headless=True),
+        BTEScraper(headless=True),
+        AmenScraper(headless=True),
+        AlBarakaScraper(headless=True),
     ]
     
     # Filter based on args
@@ -59,6 +65,12 @@ def main():
         scrapers = [s for s in all_scrapers if isinstance(s, STDScraper)]
     elif args.bank.lower() == "bh":
         scrapers = [s for s in all_scrapers if isinstance(s, BhScraper)]
+    elif args.bank.lower() == "bte":
+        scrapers = [s for s in all_scrapers if isinstance(s, BTEScraper)]
+    elif args.bank.lower() in ("amen", "amenbank"):
+        scrapers = [s for s in all_scrapers if isinstance(s, AmenScraper)]
+    elif args.bank.lower() in ("albaraka", "al_baraka"):
+        scrapers = [s for s in all_scrapers if isinstance(s, AlBarakaScraper)]
 
     # 4. Run Scraping Loop
     logger.info(f"Starting scaling simulation for {profile_count} profiles across {len(scrapers)} banks...")
